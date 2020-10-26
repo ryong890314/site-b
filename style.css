@@ -24,9 +24,6 @@ html, body {
 	font-size: 100%;
 	background-color: #ddd;
 }
-html {
-	scroll-behavior: smooth;
-  }
 button {
     overflow: visible;
     margin: 0;
@@ -42,7 +39,7 @@ div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, 
 	margin: 0;
 	padding: 0;
 }
-header, footer, section, article, aside, nav, hgroup, details, menu, figure, figcaption {
+header, section, article, aside, nav, hgroup, details, menu, figure, figcaption {
 	background-color: #fff;
 	display: block;
 }
@@ -62,7 +59,6 @@ img, fieldset {
 #footer {
 	padding:50px 20px;
 	color: #fff;
-	background-color: #003456;
 }
 
 .footer_container {
@@ -80,7 +76,9 @@ img, fieldset {
 .footer_info .copy {
 	color: #999;
 }
-
+.footer{
+	height: 300px !important;
+}
 /* Add */
 #header {
 	position: fixed;
@@ -141,12 +139,11 @@ img, fieldset {
 #gnb .sub_ul {
 	display: none;
     height: 100%;
-	background-color: #003456;
+	
 }
 #gnb .sub_ul li {
 	float: none;
 	width: 150px;
-	border-bottom: 1px solid rgba(255,255,255,0.5);
 }
 #gnb .sub_ul li:last-child{
 	border-bottom: none;
@@ -190,17 +187,24 @@ img, fieldset {
 	font-weight: 800;
 	color: #fff;
 	text-shadow: 0 0 5px #000;
+	text-align: left;
+	line-height: 1.5;
 }
 #section0 p{
-	font-size: 2em;
+	font-size: 1.5em;
+	text-align: left;
 	color: #fff;
+	padding-top: 20px;
 	text-shadow: 0 0 5px #000;
+	line-height: 1.5;
 }
+#section3,
 #section1 {
 	background-image: url('./images/cb1_img.jpg');
 	background-size: cover;
 	background-position: center;
 }
+#section3 .image_cover_dark,
 #section1 .image_cover_dark {
 	position: absolute;
 	width: 100%;
@@ -208,14 +212,23 @@ img, fieldset {
 	background-color: #000;
 	opacity: 0.8;
 }
+#section2 h1,
 #section1 h1{
+	text-align: left;
 	font-size: 4em;
 	font-weight: 800;
 	color: #fff;
 }
+#section2 p,
 #section1 p{
-	font-size: 2em;
+	font-size: 1.5em;
+	text-align: left;
 	color: #fff;
+	padding-top: 20px;
+	line-height: 1.5;
+}
+#section3 p {
+text-align: left;
 }
 .fp-section {
 	height: 100vh;
