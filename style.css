@@ -230,6 +230,43 @@ img, fieldset {
 #section3 p {
 text-align: left;
 }
+#section1 .content ul {
+	width: 100%;
+	padding-top: 50px;
+	font-size: 0;
+	
+	display: inline-block;
+}
+#section1 .content ul a {
+	text-decoration: none;
+	color: #fff;
+}
+#section1 .content ul a:hover {
+	text-decoration: underline;
+}
+#section1 .content ul li {
+	width: 32%;
+	font-size: 1rem;
+	display: inline-block;
+	padding: 0 0.5%;
+	border-right: 1px solid #fff;
+}
+#section1 .content ul li:last-child {
+	border-right: none;
+}
+#section1 .content ul li i {
+	font-size: 5em;
+}
+#section1 .content ul li h2 {
+	font-size: 1.5em;
+	padding-top: 20px;
+}
+#section1 .content ul li p {
+	font-size: 1.2em;
+	padding-top: 5px;
+	text-align: center;
+	opacity: .8;
+}
 .fp-section {
 	height: 100vh;
 }

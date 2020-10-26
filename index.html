@@ -10,6 +10,8 @@
 <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous">
 <link rel="stylesheet" type="text/css" href="./images/javascript.fullPage.css" />
 <link rel="stylesheet" href="./images/animate.css">
+<link rel="stylesheet" type="text/css" href="./images/slick.css">
+<link rel="stylesheet" type="text/css" href="./images/slick-theme.css">
 <link rel="stylesheet" href="./style.css">
 
 <script src="./images/wow.min.js"></script>
@@ -68,11 +70,9 @@
 						</ul>
 					</li>
 					<li>
-						<a href="#">사업분야</a>
+						<a href="#">프로젝트</a>
 						<ul class="sub_ul">
-							<li><a href="#">시스템</a></li>
-							<li><a href="#">ERP 컨설팅</a></li>
-							<li><a href="#">솔루션</a></li>
+							<li><a href="#">프로젝트</a></li>
 						</ul>
 					</li>
 					<li>
@@ -114,10 +114,28 @@
 								<div class="content">
 									<h1 class="wow fadeInUp" data-wow-delay="400ms">건축설계 전문기업</h1>
 									<p class="wow fadeInRight" data-wow-delay="800ms">도시주거와 개발 분야에서는 새로운 친환경 패러다임과 스마트 시티의 방향을 제시하며<br> 정부발주사업에 역량을 집중해 사업을 진행하고 있습니다. </p>
-									<ul>
-										<li>프로젝트A</li>
-										<li>프로젝트A</li>
-										<li>프로젝트A</li>
+									<ul class="wow fadeInUp" data-wow-delay="1000ms">
+										<li>
+											<a href="#">
+												<i class="far fa-building"></i>
+												<h2>회사소개</h2>
+												<p>About</p>
+											</a>
+										</li>
+										<li>
+											<a href="#">
+												<i class="fas fa-tools"></i>
+												<h2>프로젝트</h2>
+												<p>Project</p>
+											</a>
+										</li>
+										<li>
+											<a href="#">
+												<i class="fas fa-headset"></i>
+												<h2>고객지원</h2>
+												<p>Support</p>
+											</a>
+										</li>
 									</ul>
 								</div>
 							</div>
@@ -125,6 +143,13 @@
 								<div class="content">
 									<h1 class="wow fadeInUp" data-wow-delay="400ms">프로젝트</h1>
 									<p class="wow fadeInRight" data-wow-delay="800ms">우수한 기술력으로 전세계 다양한 국가에서 엔지니어링 서비스 전반의 다양한<br>프로젝트를 성공적으로 진행하고 있습니다.</p>
+									<div class="your-class">
+										<div>your content</div>
+										<div>your content</div>
+										<div>your content</div>
+										<div>your content</div>
+										<div>your content</div>
+									  </div>
 								</div>
 							</div>
 							<div class="section" id="section3">
@@ -172,6 +197,7 @@
 <script src="./images/script.js"></script>
 
 <script type="text/javascript" src="./images/javascript.fullPage.js"></script>
+<script type="text/javascript" src="./images/slick.min.js"></script>
 
 <script type="text/javascript">
 	fullpage.initialize('#fullpage', {
@@ -179,7 +205,7 @@
 		menu: '#menu',
 		navigation: true,
 		navigationPosition: 'right',
-		navigationTooltips: ['메인화면', '회사소개', '회사정보', '정보'],
+		navigationTooltips: ['메인', '회사소개', '프로젝트', '고객지원'],
 		showActiveTooltip: false,
 		slidesNavigation: false,
 		slidesNavPosition: 'bottom',
@@ -196,6 +222,15 @@
 	afterResponsive: function(isResponsive){},
 	afterSlideLoad: function(section, origin, destination, direction){},
 	onSlideLeave: function(section, origin, destination, direction){}
+});
+</script>
+<script>
+	$('.your-class').slick({
+		dots: true,
+  slidesToShow: 3,
+  slidesToScroll: 1,
+  autoplay: true,
+  autoplaySpeed: 2000,
 });
 </script>
 
