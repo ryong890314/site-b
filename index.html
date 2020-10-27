@@ -79,7 +79,7 @@
 					<s_cover name='main-panel-1'>
 
 						<div id="fullpage">
-							<div class="section " id="section0">
+							<div class="section" id="section0">
 								<div class="content">
 									<h1 class="wow fadeInUp" data-wow-delay="400ms">편안하고 안전한 공간을<br>만들어가는 기술</h1>
 									<p class="wow fadeInRight" data-wow-delay="800ms">설계·시공은 물론 새로운 트렌드를 창조하기 위해 건축물에 대한<br>연구개발을 지속적으로 추진하고 있습니다.</p>
@@ -163,14 +163,6 @@
 
 	</section>
 	
-	<!-- footer 영역 -->
-
-
-
-
-
-	<!-- // footer 영역 -->
-	
 </div>
 <script src="./images/script.js"></script>
 
@@ -199,8 +191,18 @@
 	afterReBuild: function(){},
 	afterResponsive: function(isResponsive){},
 	afterSlideLoad: function(section, origin, destination, direction){},
-	onSlideLeave: function(section, origin, destination, direction){}
+	onSlideLeave: function(section, origin, destination, direction){},
+	
 });
+</script>
+<script>
+	if ($(window).height() < 600) {
+		fullpage.initialize('#fullpage', {
+		autoScrolling: false,
+		fitToSection: false,
+});
+	}
+
 </script>
 <script>
 	$('.project_section').slick({
