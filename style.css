@@ -320,6 +320,7 @@ img, fieldset {
 }
 .fp-section {
 	height: 100vh;
+	min-height: 600px;
 }
 
 /* Media Screen - Tablet */
