@@ -10,7 +10,7 @@
 <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous">
 <link rel="stylesheet" type="text/css" href="./images/javascript.fullPage.css" />
 <link rel="stylesheet" href="./images/animate.css">
-<link rel="stylesheet" type="text/css" href="./images/slick.css">
+<link rel="stylesheet" type="text/css" charset="UTF-8" href="./images/slick.css">
 <link rel="stylesheet" type="text/css" href="./images/slick-theme.css">
 <link rel="stylesheet" href="./style.css">
 
@@ -108,13 +108,14 @@
 									<h1 class="wow fadeInUp" data-wow-delay="400ms">편안하고 안전한 공간을<br>만들어가는 기술</h1>
 									<p class="wow fadeInRight" data-wow-delay="800ms">설계·시공은 물론 새로운 트렌드를 창조하기 위해 건축물에 대한<br>연구개발을 지속적으로 추진하고 있습니다.</p>
 								</div>
+								<img class="mouse" src="./images/mouse.png" alt="mouse">
 							</div>
 							<div class="section" id="section1">
 								<div class="image_cover_dark"></div>
 								<div class="content">
 									<h1 class="wow fadeInUp" data-wow-delay="400ms">건축설계 전문기업</h1>
 									<p class="wow fadeInRight" data-wow-delay="800ms">도시주거와 개발 분야에서는 새로운 친환경 패러다임과 스마트 시티의 방향을 제시하며<br> 정부발주사업에 역량을 집중해 사업을 진행하고 있습니다. </p>
-									<ul class="wow fadeInUp" data-wow-delay="1000ms">
+									<ul class="wow fadeInUp" data-wow-delay="1200ms">
 										<li>
 											<a href="#">
 												<i class="far fa-building"></i>
@@ -143,12 +144,17 @@
 								<div class="content">
 									<h1 class="wow fadeInUp" data-wow-delay="400ms">프로젝트</h1>
 									<p class="wow fadeInRight" data-wow-delay="800ms">우수한 기술력으로 전세계 다양한 국가에서 엔지니어링 서비스 전반의 다양한<br>프로젝트를 성공적으로 진행하고 있습니다.</p>
-									<div class="your-class">
-										<div>your content</div>
-										<div>your content</div>
-										<div>your content</div>
-										<div>your content</div>
-										<div>your content</div>
+									<div class="project_section wow fadeInUp" data-wow-delay="1200ms">
+										<div class="item" style="background-image: url(./images/section2_img1.jpg)">
+										</div>
+										<div class="item" style="background-image: url(./images/section2_img2.jpg)">
+										</div>
+										<div class="item" style="background-image: url(./images/section2_img3.jpg)">
+										</div>
+										<div class="item" style="background-image: url(./images/section2_img4.jpg)">
+										</div>
+										<div class="item" style="background-image: url(./images/section2_img5.jpg)">
+										</div>
 									  </div>
 								</div>
 							</div>
@@ -157,7 +163,7 @@
 								<div class="content">
 
 									<footer id="footer">
-										<div class="footer_container">
+										<div class="footer_container wow fadeInUp" data-wow-delay="400ms">
 											<div class="footer_logo">
 												<img src="./images/logo_white.png" alt="logo">
 											</div>
@@ -225,12 +231,21 @@
 });
 </script>
 <script>
-	$('.your-class').slick({
+	$('.project_section').slick({
 		dots: true,
-  slidesToShow: 3,
+  slidesToShow: 2,
   slidesToScroll: 1,
+  arrows: false,
   autoplay: true,
-  autoplaySpeed: 2000,
+  autoplaySpeed: 4000,
+  responsive: [
+					{  
+						breakpoint: 768,
+						settings: {
+							slidesToShow: 1
+						} 
+					}
+				],
 });
 </script>
 
